@@ -1,0 +1,105 @@
+<!-- Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       table{
+           border: 2px solid black;
+       }
+      th{
+          background-color: red;
+          color: white;
+          text-align: center;
+       }
+       span{
+           font-style: italic;
+       }
+       input{
+           border-style: none none solid none;
+           border-color: black;
+           
+       }
+       #firstname,#lastname{
+          width:200px;
+          font-family: Arial, Helvetica, sans-serif;
+       }
+       #address{
+          width:400px;
+       }
+       #city,#state,#zip{
+           width:100px;
+       }
+       .fonts{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px ;
+       }
+    </style>
+    
+</head>
+<body>
+    <form action="" method="get">
+        <table >
+            <tr >
+                 <th colspan="6"> Yes! I want to subscribe to <span> Mag-O-Zine</span></th>
+            </tr>
+            <tr>
+                 <td colspan="3">
+                      <input type="text" id="firstname" required /> 
+                      <div class="fonts">First Name</div>
+                  </td >
+                  <td colspan="3">
+                      <input type="text" id="lastname" required /> 
+                      <div class="fonts">Last Name</div>
+                 </td>
+            </tr>
+            <tr>
+                  <td colspan="6">
+                      <input type="text" id="address" required /> 
+                      <div><label for="address" class="fonts">Address</label></div>
+                  </td>
+            </tr> 
+            <tr>   
+                  <td colspan="2">
+                      <input type="text" id="city" required /> 
+                      <div><label for="city" class="fonts">City</label></div>
+                  </td>
+                  <td colspan="2">
+                      <input type="text" id="state" required /> 
+                      <div><label for="state" class="fonts">State</label></div>
+                  </td>
+                  <td colspan="2">
+                      <input type="text" id="zip" required /> 
+                      <div><label for="zip" class="fonts">Zip</label></div>
+                  </td>
+            </tr>
+            <tr>
+                 <td colspan="6">Subscribe for:
+                 
+                      <input type="radio" id="year1" name="subscription" value="1 Year"/> <label for="year1">1 year ($19.95)</label>
+                     
+                      <input type="radio" id="year2" name="subscription" value="2 Years"/><label for="year2">2 years ($35.00)</label>
+                 </td>
+            </tr> 
+
+            
+            <tr>
+               <td colspan="6">
+                Send me more information about:
+                <div><input type="checkbox" id="computer-zine" value="computer-zine"/> <label for ="computer-zine">Computer-Zine</label></div>
+                <div> <input type="checkbox" id="fish-zine" value="fish-zine"/> <label for ="fish-zine">Fish-Zine</label> </div>
+                <div> <input type="checkbox" id="cat-o-zine" value="cat-o-zine"/> <label for ="cat-o-zine">Cat-O-Zine</label></div>
+                </td>
+            </tr>
+               
+        </table>  
+
+        <input type="submit" value="Submit">  
+
+    </form>
+</body>
+</html>
